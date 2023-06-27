@@ -1,6 +1,6 @@
-const domElements = document.documentElement;
-document.querySelector('body').style.background="linear-gradient(-45deg,black, #173969)"
-domElements.style.color = 'white';
+// const domElements = document.documentElement;
+// document.querySelector('body').style.background="linear-gradient(-45deg,black, #173969)"
+// domElements.style.color = 'white';
 
 
 let elements = document.querySelectorAll(".card")
