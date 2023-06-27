@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    /* --primary-color:rgb(125, 26, 218); */
+    --primary-color:rgb(136, 0, 255);
+}
+html{
+    scroll-behavior: smooth; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    margin: auto;
+    width: 95%;
+}
+#main {
+    overflow: hidden;
+}
+.main__section-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    animation: up 900ms linear ;
+}
+@keyframes up {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.intro-text-container{
+    position: relative;
+}
+#main__section-1-bubble-1{
+    z-index: -1;
+    position: absolute;
+    width: 10rem;
+    bottom: 0;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, rgba(132, 0, 255, 0.26));
+}
+#main__section-1-bubble-2{
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, rgba(132, 0, 255, 0.26));
+}
+.main__heading{
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+}
+.main__heading-name, .main__heading-skill{
+    color: var(--primary-color)
+}
+
+.main__sub-heading{
+    font-size: 3rem;
+    margin: 0;    
+}
+
+.avatar{
+    width: 40%;
+}
+.main__buttons{
+    margin: 1rem .4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.main__buttons button, .main__buttons a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: var(--primary-color);
+    padding: .5rem 1.5rem;
+}
+.about-me{
+    position: relative;
+    /* border: 1px solid var(--primary-color); */
+    text-align: justify;
+}
+.card {
+    opacity: 0;
+    padding: 0 10%;
+    margin-top: 2rem;
+}
+
+.section-title{
+    font-size: 2rem;
+    /* margin-top: 2rem; */
+    padding-bottom:.5rem ;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+
+}
+.section-description {
+    margin-top:2rem;
+    padding: 0 1rem;
+    
+}
+.icon-image{
+    width: 1.5rem;
+    transform: translateY(4px);
+
+}
+.languages, .fameworks,.tools,.web-technologies{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.left-to-right{
+    transform: translateX(-100px);
+}
+.right-to-left{
+    transform: translateX(100px);
+
+}
+.slide{
+    opacity: 1;
+    transition: 1s;
+    transform: translate(0px);
+}
+
+
