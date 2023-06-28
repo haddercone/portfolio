@@ -170,7 +170,7 @@ body{
 .languages, .fameworks,.tools,.web-technologies{
     font-size: 1.5rem;
     margin: 0;
-    flex: 1 45%;
+    flex: 1 49%;
 }
 .projects {
     display: flex;
