@@ -1,5 +1,6 @@
 const domElements = document.documentElement;
-document.querySelector('body').style.background="linear-gradient(-45deg,black, #173969)"
+// document.querySelector('body').style.background="linear-gradient(-45deg,black, #173969)"
+document.querySelector('body').style.background="linear-gradient(-45deg, #173969, black)"
 domElements.style.color = 'white';
 
 
@@ -13,7 +14,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         
     });
 }, {
-    threshold:0.3,
+    threshold:0.2,
 })
 
 elements.forEach((element,i) =>{
